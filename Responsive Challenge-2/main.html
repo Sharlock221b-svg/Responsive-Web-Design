@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      header {
+        font-size: 40px;
+        color: #d1782e;
+        margin: 20px;
+      }
+      span {
+        font-size: 30px;
+        border: 2px solid black;
+        margin: 50px 20px 5px 5px;
+        background-color: #2e87d1;
+        padding: 20px 20px 20px 20px;
+      }
+
+      @media screen and (min-width: 1075px){
+         header{
+             font-size: 30px;
+         }
+         span{
+             font-size: 25px;
+
+         }
+      }
+
+      @media screen and (min-width: 1381px){
+         header{
+             font-size: 40px;
+         }
+         span{
+             font-size: 30px;
+         }
+      }
+
+      @media screen and (max-width: 1074px){
+          #two::after{
+            content:"\a";
+            white-space: pre;
+
+          }
+
+          #three{
+              position:relative;
+              top: 50px;
+          }
+          #four{
+              position:relative;
+              top: 50px;
+          }
+      }
+
+      @media screen and (max-width: 659px)
+      {
+          #one::after,
+          #two::after,
+          #three::after{
+            content:"\a";
+            white-space: pre;
+          }
+
+          span{
+              font-size: 30px;
+          }
+          main{
+              text-align: center;
+          }
+
+          #two{
+              position: relative;
+              top: 70px;
+          }
+          #three{
+            position: relative;
+              top: 140px;
+          }
+
+          #four{
+             position: relative;
+              top: 210px;
+          }
+      }
+
+      
+    </style>
+    <title>Respsive</title>
+  </head>
+  <body>
+    <header class="dea">
+      Bhag mat kr prayas kr prayas bhag mat. Sukh hi hai peeda, Peeda hi hai
+      sukh.
+    </header>
+    <br />
+    <main>
+      <span id="one">This is an Heading 1 </span>
+      <span id="two">This is an Heading 2 </span>
+      <span id="three">This is an Heading 3 </span>
+      <span id="four">This is an Heading 4 </span>
+    </main>
+  </body>
+</html>
